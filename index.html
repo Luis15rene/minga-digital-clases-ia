@@ -34,24 +34,25 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="  https://fonts.googleapis.com  ">
-    <link rel="preconnect" href="https://fonts.gstatic.com  " crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css  ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org  ",
+        "@context": "https://schema.org",
         "@type": "EducationalOrganization",
         "name": "Algoritmos y Raíces",
         "description": "Plataforma educativa de Inteligencia Artificial para comunidades rurales de Chiloé",
         "url": "",
-"founder": {
-    "@type": "Person",
-    "name": "Luis Urra"
-}
-</script>
+        "founder": {
+            "@type": "Person",
+            "name": "Luis Urra"
+        }
+    }
+    </script>
 </head>
 
 <body>
@@ -60,7 +61,7 @@
     
     <!-- Header -->
     <header class="header" role="banner">
-	        <nav class="navbar" role="navigation" aria-label="Navegación principal">
+        <nav class="navbar" role="navigation" aria-label="Navegación principal">
             <div class="nav-container">
                 <div class="nav-logo">
                     <h1 class="logo-text">Algoritmos y Raíces</h1>
@@ -140,7 +141,8 @@
             </div>
         </nav>
     </header>
-<script>
+
+    <script>
     document.addEventListener('DOMContentLoaded', () => {
         const dropdowns = document.querySelectorAll('.dropdown-content');
         dropdowns.forEach(dropdown => {
@@ -176,18 +178,14 @@
             });
         });
     });
-</script>
-</body>
-</html>
+    </script>
 
     <!-- Main Content -->
- 
     <main id="main-content" role="main">
         
         <!-- Hero Section -->
- 
         <section class="hero" id="inicio" aria-label="Portada principal">
-            <!-- Background Video --> 
+            <!-- Background Video -->
             <div class="hero-video" aria-hidden="true">
                 <video autoplay muted loop playsinline loading="lazy" aria-label="Video de paisajes de Chiloé">
                     <source src="assets/videos/chiloe-paisajes.mp4" type="video/mp4">
@@ -197,17 +195,25 @@
                 <div class="video-overlay" aria-hidden="true"></div>
             </div>
             
-            <!-- Neural Network Animation --> 
+            <!-- Neural Network Animation -->
             <div class="neural-animation" aria-hidden="true">
                 <canvas id="neuralCanvas" aria-label="Animación de redes neuronales"></canvas>
             </div>
             
-            <!-- Hero Content --> 
+            <!-- Hero Content -->
             <div class="hero-content">
                 <h1 class="hero-title">ALGORITMOS Y RAÍCES</h1>
                 <p class="hero-subtitle">Inteligencia Artificial puente digital para Chiloé hacia un nuevo mundo</p>
                 
-                <!-- Main CTA Button --> 
+                <!-- Professor Photo Circle -->
+                <div class="professor-photo-circle">
+                    <img src="assets/images/profesor-luis-urra.jpg" alt="Profesor Luis Urra" loading="lazy">
+                </div>
+                
+                <!-- Purpose Video Section -->
+                <div class="purpose-video-section"></div>
+                
+                <!-- Main CTA Button -->
                 <div class="hero-cta">
                     <button class="btn btn-primary" data-modal-target="#purpose-video-modal" role="button">
                         Propósitos del Palafito Digital
@@ -216,7 +222,7 @@
                         <i class="fas fa-rocket" aria-hidden="true"></i>
                         ¡Comienza a Aprender Ahora!
                     </a>
-                    <!-- NUEVO botón --> 
+                    <!-- NUEVO botón -->
                     <button class="btn btn-primary" data-modal-target="#instructions-video-modal" role="button">
                         <i class="fa fa-info-circle"></i> Instrucciones al curso de la IA
                     </button>
@@ -224,58 +230,12 @@
             </div>
         </section>
 
-        <!-- Logo Band (Banner) -->
- 
-        <section class="logo-banner">
-            <img src="images/logoARweb.png" alt="Banner Algoritmos y Raíces" class="banner-image">
+        <!-- Logo Banner (Centrado) -->
+        <section class="logo-banner" style="background-color: white; padding: 20px 0; text-align: center;">
+            <img src="assets/images/logoARweb.png" alt="Banner Algoritmos y Raíces" style="max-width: 100%; height: auto;">
         </section>
 
-        <!-- Purpose Video Modal (sin cambios) --> 
-        <div id="purpose-video-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 id="modal-title">Propósitos del Palafito Digital</h2>
-                    <button class="modal-close" aria-label="Cerrar modal">×</button>
-                </div>
-                <div class="modal-body">
-                    <div class="video-container">
-                       <iframe
-<iframe
-  id="purpose-video-iframe"
-  src="https://www.youtube.com/embed/w3-eZ08qYb0  "
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
-  aria-label="Video sobre los propósitos del Palafito Digital">
-</iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal: Instrucciones al curso de la IA --> 
-        <div id="instructions-video-modal" class="modal" role="dialog" aria-labelledby="instructions-title" aria-hidden="true">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 id="instructions-title">Instrucciones al curso de la IA</h2>
-              <button class="modal-close" aria-label="Cerrar modal">×</button>
-            </div>
-            <div class="modal-body">
-              <div class="video-container">
-                <iframe
-                  src="https://www.youtube.com/embed/piaik5vEsP0  "
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  aria-label="Video de instrucciones al curso de la IA">
-                </iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- ¿Por qué aprender IA? Section --> 
+        <!-- ¿Por qué aprender IA? Section -->
         <section class="section" id="por-que-ia" aria-labelledby="por-que-ia-title">
             <div class="container">
                 <h2 id="por-que-ia-title" class="section-title">¿Por qué aprender IA?</h2>
@@ -318,32 +278,27 @@
             </div>
         </section>
 
-        <!-- Acerca del Profesor Section --> 
+        <!-- Acerca del Profesor Section -->
         <section class="section bg-alt" id="profesor" aria-labelledby="profesor-title">
             <div class="container">
                 <h2 id="profesor-title" class="section-title">Acerca del Profesor</h2>
                 <div class="professor-content">
                     <div class="professor-image">
-    <img src="images/fotoLUMweb.png" alt="Foto del Profesor Luis Urra" class="professor-photo">
-</div>
+                        <img src="assets/images/fotoLUMweb.png" alt="Foto del Profesor Luis Urra" class="professor-photo">
+                    </div>
                     <div class="professor-info">                       
-<div class="article-placeholder texto-open-sans">
-  <h3>Prof. Luis Urra Muena</h3>
-
-  <p>- Prof. de economía y filosofía por alrededor de 30 años. He dictado clases en universidades chilenas y europeas.</p>
-
-  <p>- He realizado cursos online de programación en Python y de inteligencia Artificial (IA) en diversas instituciones internacionales.</p>
-
-  <p>- Practico el compartir conocimientos, porque solo es fecundo dentro de un contexto social; facilita la humanización del progreso social y científico, democratiza el acceso al saber y la información, y libera a las personas del desconocimiento, los prejuicios ante otros y de prácticas insolidarias con los demás.</p>
-</div>
-
-</div>
+                        <div class="article-placeholder texto-open-sans">
+                            <h3>Prof. Luis Urra Muena</h3>
+                            <p>- Prof. de economía y filosofía por alrededor de 30 años. He dictado clases en universidades chilenas y europeas.</p>
+                            <p>- He realizado cursos online de programación en Python y de Inteligencia Artificial (IA) en diversas instituciones internacionales.</p>
+                            <p>- Practico el compartir conocimientos, porque solo es fecundo dentro de un contexto social; facilita la humanización del progreso social y científico, democratiza el acceso al saber y la información, y libera a las personas del desconocimiento, los prejuicios ante otros y de prácticas insolidarias con los demás.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonios Section --> 
+        <!-- Testimonios Section -->
         <section class="section" id="testimonios" aria-labelledby="testimonios-title">
             <div class="container">
                 <h2 id="testimonios-title" class="section-title">Testimonios</h2>
@@ -353,12 +308,12 @@
             </div>
         </section>
 
-        <!-- Niveles (Palafitos Digitales) Section --> 
+        <!-- Niveles (Palafitos Digitales) Section -->
         <section class="section bg-alt" id="niveles" aria-labelledby="niveles-title">
             <div class="container">
                 <h2 id="niveles-title" class="section-title">NIVELES (PALAFITOS DIGITALES)</h2>
                 
-                <!-- Nivel 1 --> 
+                <!-- Nivel 1 -->
                 <div class="level-section" id="nivel1" aria-labelledby="nivel1-title">
                     <h3 id="nivel1-title" class="level-title">
                         <i class="fas fa-seedling" aria-hidden="true"></i>
@@ -368,63 +323,35 @@
                         <div class="level-modules">
                             <div class="module-card" tabindex="0">
                                 <h4>¿Qué es la IA?</h4>
-                                <p>Introducción básica a los conceptos fundamentales de la inteligencia artificial.</p><iframe width="560" height="315" 
-src="https://www.youtube.com/embed/yMibsGdIIXI  " 
-frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe> <p>➡️ Segunda parte del video: 
-    <a href="https://youtu.be/oyp5tuu-3YE  " target="_blank">Ver en YouTube</a>
-  </p>
-
-  <p>🎓 Curso completo en modo básico: 
-    <a href="https://www.youtube.com/playlist?list=PLGS9TowbbbsHtdTBVl-fNHStnt6CH0uIe" target="_blank">Ver lista completa</a>
-  </p>
-</div>
+                                <p>Introducción básica a los conceptos fundamentales de la inteligencia artificial.</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/yMibsGdIIXI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <p>➡️ Segunda parte del video: <a href="https://youtu.be/oyp5tuu-3YE" target="_blank">Ver en YouTube</a></p>
+                                <p>🎓 Curso completo en modo básico: <a href="https://www.youtube.com/playlist?list=PLGS9TowbbbsHtdTBVl-fNHStnt6CH0uIe" target="_blank">Ver lista completa</a></p>
                             </div>
                             <div class="module-card" tabindex="0">
                                 <h4>La IA ya está entre nosotros</h4>
-                                <p>Descubre cómo la IA ya está presente en tu vida cotidiana.</p> <iframe width="560" height="315" 
-    src="  https://www.youtube.com/embed/ud1gRldHEc4  " 
-    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-  </iframe>
-
-  <p>➡️ Segunda parte del video: 
-    <a href="https://youtu.be/Q2Nhgiq471c  " target="_blank">Ver en YouTube</a>
-  </p>
-
-  <p>🎓 Curso completo en modo básico: 
-    <a href="https://www.youtube.com/playlist?list=PLGS9TowbbbsHtdTBVl-fNHStnt6CH0uIe" target="_blank">Ver lista completa</a>
-  </p>
-</div>
+                                <p>Descubre cómo la IA ya está presente en tu vida cotidiana.</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ud1gRldHEc4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <p>➡️ Segunda parte del video: <a href="https://youtu.be/Q2Nhgiq471c" target="_blank">Ver en YouTube</a></p>
+                                <p>🎓 Curso completo en modo básico: <a href="https://www.youtube.com/playlist?list=PLGS9TowbbbsHtdTBVl-fNHStnt6CH0uIe" target="_blank">Ver lista completa</a></p>
                             </div>
                             <div class="module-card" tabindex="0">
                                 <h4>Etapas y tipos de la IA y sus diversos aprendizajes.</h4>
-                                <p>Evolución y desarrollo de la IA; una explicación basica y clara.</p><iframe width="560" height="315" 
-    src="  https://www.youtube.com/embed/RM3dSlw1z0Y  " 
-    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-  </iframe>
-
-  <p>🎓 Curso completo en modo básico: 
-    <a href="https://www.youtube.com/playlist?list=PLGS9TowbbbsHtdTBVl-fNHStnt6CH0uIe" target="_blank">Ver lista completa</a>
-  </p>
-</div>
+                                <p>Evolución y desarrollo de la IA; una explicación basica y clara.</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/RM3dSlw1z0Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <p>🎓 Curso completo en modo básico: <a href="https://www.youtube.com/playlist?list=PLGS9TowbbbsHtdTBVl-fNHStnt6CH0uIe" target="_blank">Ver lista completa</a></p>
                             </div>
                             <div class="module-card" tabindex="0">
                                 <h4>Los Latidos Invisibles de la Inteligencia Artificial.</h4>
-                                <p>Historia de la inteligencia artificial.</p><iframe width="560" height="315" 
-    src="  https://www.youtube.com/embed/Y8cB964iRYw  " 
-    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-  </iframe>
-
-  <p>🎓 Curso completo en modo básico: 
-    <a href="https://www.youtube.com/playlist?list=PLGS9TowbbbsHtdTBVl-fNHStnt6CH0uIe" target="_blank">Ver lista completa</a>
-  </p>
-</div>
+                                <p>Historia de la inteligencia artificial.</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Y8cB964iRYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <p>🎓 Curso completo en modo básico: <a href="https://www.youtube.com/playlist?list=PLGS9TowbbbsHtdTBVl-fNHStnt6CH0uIe" target="_blank">Ver lista completa</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Nivel 2 --> 
+                <!-- Nivel 2 -->
                 <div class="level-section" id="nivel2" aria-labelledby="nivel2-title">
                     <h3 id="nivel2-title" class="level-title">
                         <i class="fas fa-cogs" aria-hidden="true"></i>
@@ -452,7 +379,7 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                     </div>
                 </div>
 
-                <!-- Nivel 3 --> 
+                <!-- Nivel 3 -->
                 <div class="level-section" id="nivel3" aria-labelledby="nivel3-title">
                     <h3 id="nivel3-title" class="level-title">
                         <i class="fas fa-rocket" aria-hidden="true"></i>
@@ -482,7 +409,7 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
             </div>
         </section>
 
-        <!-- Recursos Section --> 
+        <!-- Recursos Section -->
         <section class="section" id="recursos" aria-labelledby="recursos-title">
             <div class="container">
                 <h2 id="recursos-title" class="section-title">RECURSOS</h2>
@@ -521,23 +448,23 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
             </div>
         </section>
 
-        <!-- Comunidad (Minga Digital) Section --> 
+        <!-- Comunidad (Minga Digital) Section -->
         <section class="section bg-alt" id="comunidad" aria-labelledby="comunidad-title">
             <div class="container">
                 <h2 id="comunidad-title" class="section-title">COMUNIDAD (MINGA DIGITAL)</h2>
                 
-                <!-- Enlaces Sociales --> 
+                <!-- Enlaces Sociales -->
                 <div class="community-section" id="enlaces-sociales">
                     <h3>Enlaces Sociales</h3>
                     <div class="social-links">
-                        <a href="  https://chat.whatsapp.com/5GvVLAIDAPz6HJk0MEKS4L  " class="social-link whatsapp" role="button" target="_blank">
-  <i class="fab fa-whatsapp" aria-hidden="true"></i>
-  <span>WhatsApp</span>
-</a>
-                       <a href="https://web.facebook.com/groups/706623452173682  " class="social-link facebook" role="button" target="_blank">
-  <i class="fab fa-facebook" aria-hidden="true"></i>
-  <span>Facebook</span>
-</a>
+                        <a href="https://chat.whatsapp.com/5GvVLAIDAPz6HJk0MEKS4L" class="social-link whatsapp" role="button" target="_blank">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://web.facebook.com/groups/706623452173682" class="social-link facebook" role="button" target="_blank">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span>Facebook</span>
+                        </a>
                         <a href="#" class="social-link pdf" role="button">
                             <i class="fas fa-file-pdf" aria-hidden="true"></i>
                             <span>PDFs</span>
@@ -553,7 +480,7 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                     </div>
                 </div>
 
-                <!-- Clases YouTube --> 
+                <!-- Clases YouTube -->
                 <div class="community-section" id="clases-youtube">
                     <h3>Clases en YouTube</h3>
                     <div class="youtube-embed-placeholder">
@@ -565,7 +492,7 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                     </div>
                 </div>
 
-                <!-- Reproductor de Podcast --> 
+                <!-- Reproductor de Podcast -->
                 <div class="community-section" id="podcast-player">
                     <h3>Reproductor de Podcast</h3>
                     <div class="podcast-player-placeholder">
@@ -577,164 +504,165 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                     </div>
                 </div>
 
-              <!-- Calendario de Eventos --> 
-<div class="community-section" id="calendario">
-    <h3>Calendario de eventos</h3>
-    <div class="calendar-placeholder">
-        <iframe src="https://calendar.google.com/calendar/embed?src=66e1d2ee6718348855bb83edcb630554350d3b707202dc589d47dd2edb0b531f%40group.calendar.google.com&ctz=America%2FSantiago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
-</div>      
+                <!-- Calendario de Eventos -->
+                <div class="community-section" id="calendario">
+                    <h3>Calendario de eventos</h3>
+                    <div class="calendar-placeholder">
+                        <iframe src="https://calendar.google.com/calendar/embed?src=66e1d2ee6718348855bb83edcb630554350d3b707202dc589d47dd2edb0b531f%40group.calendar.google.com&ctz=America%2FSantiago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>      
                 
-        <!-- IA-Noticias Section --> 
-        <section class="section" id="ia-noticias" aria-labelledby="ia-noticias-title">
-            <div class="container">
-                <h2 id="ia-noticias-title" class="section-title">IA-NOTICIAS</h2>
-                <div class="news-content">
-                    <p class="section-description">Espacio para videos de otros YouTubers con comentarios del Profesor Luis Urra y contenido de su creación.</p>
-                    <div class="news-placeholder">
-                        <div class="news-item">
-                            <div class="news-video-placeholder">
-                                <i class="fab fa-youtube" aria-hidden="true"></i>
-                                <p>Video embed próximamente</p>
-                            </div>
-                            <div class="news-commentary">
-                                <h4>Comentario del Profesor</h4>
-                                <p>Aquí irán los comentarios y análisis del Profesor Luis Urra sobre los videos seleccionados.</p>
+                <!-- IA-Noticias Section -->
+                <section class="section" id="ia-noticias" aria-labelledby="ia-noticias-title">
+                    <div class="container">
+                        <h2 id="ia-noticias-title" class="section-title">IA-NOTICIAS</h2>
+                        <div class="news-content">
+                            <p class="section-description">Espacio para videos de otros YouTubers con comentarios del Profesor Luis Urra y contenido de su creación.</p>
+                            <div class="news-placeholder">
+                                <div class="news-item">
+                                    <div class="news-video-placeholder">
+                                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                                        <p>Video embed próximamente</p>
+                                    </div>
+                                    <div class="news-commentary">
+                                        <h4>Comentario del Profesor</h4>
+                                        <p>Aquí irán los comentarios y análisis del Profesor Luis Urra sobre los videos seleccionados.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <!-- Chatbots Section --> 
-        <section class="section bg-alt" id="chatbots" aria-labelledby="chatbots-title">
-            <div class="container">
-                <h2 id="chatbots-title" class="section-title">CHATBOTS</h2>
-                <div class="chatbots-content">
-                    <div class="chatbot-placeholder">
-                        <div class="chatbot-icon">
-                            <i class="fas fa-robot" aria-hidden="true"></i>
+                <!-- Chatbots Section -->
+                <section class="section bg-alt" id="chatbots" aria-labelledby="chatbots-title">
+                    <div class="container">
+                        <h2 id="chatbots-title" class="section-title">CHATBOTS</h2>
+                        <div class="chatbots-content">
+                            <div class="chatbot-placeholder">
+                                <div class="chatbot-icon">
+                                    <i class="fas fa-robot" aria-hidden="true"></i>
+                                </div>
+                                <h3>Asistente Virtual IA</h3>
+                                <p>Próximamente estará disponible nuestro chatbot especializado para responder preguntas frecuentes sobre IA y los cursos.</p>
+                                <p class="coming-soon">¡Muy pronto!</p>
+                            </div>
                         </div>
-                        <h3>Asistente Virtual IA</h3>
-                        <p>Próximamente estará disponible nuestro chatbot especializado para responder preguntas frecuentes sobre IA y los cursos.</p>
-                        <p class="coming-soon">¡Muy pronto!</p>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
                  
-                   <!-- Formulario de Inscripción --> 
-             <section class="registration-form" id="registrationForm">
-    <h3>Formulario de Inscripción</h3>
-    <form action="  https://formspree.io/f/YOUR_FORM_ID  " method="POST">
-        <div class="form-group">
-            <label for="nombre">Nombre Completo *</label>
-            <input type="text" id="nombre" name="nombre" required aria-describedby="nombre-help">
-            <small id="nombre-help">Ingresa tu nombre completo</small>
-        </div>
-        <div class="form-group">
-            <label for="direccion">Dirección *</label>
-            <input type="text" id="direccion" name="direccion" required aria-describedby="direccion-help">
-            <small id="direccion-help">Ingresa tu dirección completa</small>
-        </div>
-        <div class="form-group">
-            <label for="celular">Celular *</label>
-            <input type="tel" id="celular" name="celular" required aria-describedby="celular-help">
-            <small id="celular-help">Ingresa tu número de celular</small>
-        </div>
-        <button type="submit" class="btn btn-primary">Inscribirse</button>
-    </form>
-</section>
-    </main>
+                <!-- Formulario de Inscripción -->
+                <section class="registration-form" id="registrationForm">
+                    <h3>Formulario de Inscripción</h3>
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required aria-describedby="nombre-help">
+                            <small id="nombre-help">Ingresa tu nombre completo</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección *</label>
+                            <input type="text" id="direccion" name="direccion" required aria-describedby="direccion-help">
+                            <small id="direccion-help">Ingresa tu dirección completa</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="celular">Celular *</label>
+                            <input type="tel" id="celular" name="celular" required aria-describedby="celular-help">
+                            <small id="celular-help">Ingresa tu número de celular</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Inscribirse</button>
+                    </form>
+                </section>
+            </div>
+        </main>
 
-    <!-- Footer --> 
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Algoritmos y Raíces</h3>
-                    <p>Conectando la sabiduría ancestral de Chiloé con la tecnología del futuro.</p>
-                    <p>Educación gratuita en Inteligencia Artificial para comunidades rurales.</p>
-                    <p>AyR declara que “Palafito Digital” es entorno para clases educativas y comunitarias sin fines comerciales.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#niveles">Palafitos Digitales</a></li>
-                        <li><a href="#recursos">Recursos</a></li>
-                        <li><a href="#comunidad">Minga Digital</a></li>
-                        <li><a href="#ia-noticias">IA-Noticias</a></li>
-                        <li><a href="#chatbots">Chatbots</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Síguenos</h4>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Facebook">
-                            <i class="fab fa-facebook" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" aria-label="YouTube">
-                            <i class="fab fa-youtube" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" aria-label="GitHub">
-                            <i class="fab fa-github" aria-hidden="true"></i>
-                        </a>
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Algoritmos y Raíces</h3>
+                        <p>Conectando la sabiduría ancestral de Chiloé con la tecnología del futuro.</p>
+                        <p>Educación gratuita en Inteligencia Artificial para comunidades rurales.</p>
+                        <p>AyR declara que “Palafito Digital” es entorno para clases educativas y comunitarias sin fines comerciales.</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Enlaces Rápidos</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#niveles">Palafitos Digitales</a></li>
+                            <li><a href="#recursos">Recursos</a></li>
+                            <li><a href="#comunidad">Minga Digital</a></li>
+                            <li><a href="#ia-noticias">IA-Noticias</a></li>
+                            <li><a href="#chatbots">Chatbots</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Síguenos</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" aria-label="YouTube">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" aria-label="GitHub">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Newsletter</h4>
+                        <form class="newsletter-form" action="https://formspree.io/f/YOUR_NEWSLETTER_FORM_ID" method="POST">
+                            <label for="newsletter-email" class="sr-only">Correo electrónico para newsletter</label>
+                            <input type="email" id="newsletter-email" name="email" placeholder="Tu email" required>
+                            <button type="submit" aria-label="Suscribirse al newsletter">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
                 
-                <div class="footer-section">
-                    <h4>Newsletter</h4>
-                    <form class="newsletter-form" action="https://formspree.io/f/YOUR_NEWSLETTER_FORM_ID  " method="POST">
-                        <label for="newsletter-email" class="sr-only">Correo electrónico para newsletter</label>
-                        <input type="email" id="newsletter-email" name="email" placeholder="Tu email" required>
-                        <button type="submit" aria-label="Suscribirse al newsletter">
-                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
-                        </button>
-                    </form>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Algoritmos y Raíces - Profesor Luis Urra. Todos los derechos reservados.</p>
+                    <p>Hecho con ❤️ para las comunidades de Chiloé</p>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Algoritmos y Raíces - Profesor Luis Urra. Todos los derechos reservados.</p>
-                <p>Hecho con ❤️ para las comunidades de Chiloé</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- Scripts --> 
-    <script src="script.js"></script>
-    
-    <!-- Service Worker Registration --> 
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/sw.js')
-                .then(function(registration) {
-                    console.log('SW registrado con éxito:', registration.scope);
-                })
-                .catch(function(registrationError) {
-                    console.log('SW falló al registrarse:', registrationError);
-                });
+        <!-- Scripts -->
+        <script src="script.js"></script>
+        
+        <!-- Service Worker Registration -->
+        <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('SW registrado con éxito:', registration.scope);
+                    })
+                    .catch(function(registrationError) {
+                        console.log('SW falló al registrarse:', registrationError);
+                    });
+            });
+        }
+        </script>
+        <script>
+        document.addEventListener('click', function(e) {
+            if (e.target.hasAttribute('data-modal-target')) {
+                const modalId = e.target.getAttribute('data-modal-target');
+                document.querySelector(modalId).classList.add('active');
+            }
+            if (e.target.classList.contains('modal-close')) {
+                e.target.closest('.modal').classList.remove('active');
+            }
         });
-    }
-</script>
-<script>
-    document.addEventListener('click', function(e) {
-        if (e.target.hasAttribute('data-modal-target')) {
-            const modalId = e.target.getAttribute('data-modal-target');
-            document.querySelector(modalId).classList.add('active');
-        }
-        if (e.target.classList.contains('modal-close')) {
-            e.target.closest('.modal').classList.remove('active');
-        }
-    });
-</script>
-</body>
+        </script>
+    </body>
 </html>
